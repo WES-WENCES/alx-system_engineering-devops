@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | grep -E '^\.$|^\.\.$|^[0-9a-zA-Z]' | sort | awk 'BEGIN {ORS=","} {if ($0 == "." || $0 == "..") {print $0} else {print $0 "/"}}' | sed 's/,$/\n/'
+ls -amvp
